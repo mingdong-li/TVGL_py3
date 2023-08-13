@@ -32,7 +32,7 @@ I think it is also caused by version conflict. Package import of cvxpy.atoms.log
 In cvxpy.atoms.log_sum_exp: change scipy.misc to scipy.special for the import of logsumexp
 
 
-### Other problems
+### Other problems (not fix yet)
 Code ```from XXX import *``` is not allowed in function.
 ```python
 # TVGL.py 
@@ -54,6 +54,7 @@ Code ```from XXX import *``` is not allowed in function.
         from inferGraphPN import *
 ```
 
+Now, I put ```from inferGraphL1 import *``` out of the function ```TVGL()``` and comment the above code, which means only one Penalty can be used. You can change it according to your required method in this stupid way.
 
 
 ## Usage
