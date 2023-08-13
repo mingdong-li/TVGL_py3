@@ -23,7 +23,7 @@ pip install setuptools==57.5.0
 pip install snap-stanford
 pip install cvxpy==0.4.11 
 ```
-According to a closed issue in TVGL, TVGL relies on CVXPY version 0.4. You may encounter *error in cvxpy setup command: use_2to3 is invalid* when you have a newer version (e.g 1.0)
+According to a closed issue in TVGL, TVGL relies on CVXPY version 0.4. You may encounter "*error in cvxpy setup command: use_2to3 is invalid* when you have a newer version" (e.g 1.0)
 
 
 ### log_sum_exp
@@ -54,7 +54,9 @@ Code ```from XXX import *``` is not allowed in function.
         from inferGraphPN import *
 ```
 
-Now, I put ```from inferGraphL1 import *``` out of the function ```TVGL()``` and comment the above code, which means only one Penalty can be used. You can change it according to your required method in this stupid way.
+Now, I put ```from inferGraphL1 import *``` out of the function ```TVGL()``` and comment the above code, which means only one Penalty can be used. You can change it according to your required method in this stupid way. 
+
+The parameter *indexOfPenalty* should still be adjusted according to the used penalty.
 
 
 ## Usage
