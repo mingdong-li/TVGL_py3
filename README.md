@@ -85,6 +85,8 @@ epsAbs = 1e-3 : ADMM absolute tolerance threshold (see full details in http://st
 epsRel = 1e-3 : ADMM relative tolerance threshold (see http://stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf)
 
 
+## Future
+Plan to add more about neural data simulation and analysis based on graph learning.
 
 
 ## Example
