@@ -23,7 +23,7 @@ pip install setuptools==57.5.0
 pip install snap-stanford
 pip install cvxpy==0.4.11 
 ```
-According to a closed issue in TVGL, TVGL relies on CVXPY version 0.4. You may encounter "*error in cvxpy setup command: use_2to3 is invalid* when you have a newer version" (e.g 1.0)
+According to a closed issue in TVGL, TVGL relies on CVXPY version 0.4. You may encounter *"error in cvxpy setup command: use_2to3 is invalid"* when you have a newer version (e.g 1.0)
 
 
 ### log_sum_exp
