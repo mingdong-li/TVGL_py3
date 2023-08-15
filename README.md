@@ -54,9 +54,7 @@ Code ```from XXX import *``` is not allowed in function.
         from inferGraphPN import *
 ```
 
-Now, I put ```from inferGraphL1 import *``` out of the function ```TVGL()``` and comment the above code, which means only one Penalty can be used. You can change it according to your required method in this stupid way. 
-
-The parameter *indexOfPenalty* should still be adjusted according to the used penalty.
+Now, I added another nesting and more files to realize the penalty selection in a stupid way.
 
 
 ## Usage
