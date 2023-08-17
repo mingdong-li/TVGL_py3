@@ -25,11 +25,13 @@ pip install cvxpy==0.4.11
 ```
 According to a closed issue in TVGL, TVGL relies on CVXPY version 0.4. You may encounter *"error in cvxpy setup command: use_2to3 is invalid"* when you have a newer version (e.g 1.0)
 
+And you may need gcc and g++ to build cvxpy
+
 
 ### log_sum_exp
 I think it is also caused by version conflict. Package import of cvxpy.atoms.log_sum_exp should be changed
 
-In cvxpy.atoms.log_sum_exp: change scipy.misc to scipy.special for the import of logsumexp
+In **cvxpy.atoms.log_sum_exp**: change **scipy.misc** to **scipy.special** for the import of logsumexp
 
 
 ### Other problems (not fix yet)
