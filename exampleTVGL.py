@@ -32,9 +32,11 @@ def TVGL(data, lengthOfSlice, lamb, beta, indexOfPenalty, verbose = False, eps =
     elif indexOfPenalty == 4:
         print('Use l-inf penalty function')
         thetaSet = TVGL_Linf(data, lengthOfSlice, lamb, beta, verbose=True)
+    
     elif indexOfPenalty == 5:
         print('Use perturbation node penalty function')
         thetaSet = TVGL_PN(data, lengthOfSlice, lamb, beta, verbose=True)
+    
     else:
         raise Exception("Wrong penalty selection")
 
